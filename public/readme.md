@@ -1,0 +1,1 @@
+After cloning this project using 'git clone link' on your command line, install packages and dependences using 'npm  install'
