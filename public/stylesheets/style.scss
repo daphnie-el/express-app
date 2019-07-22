@@ -69,10 +69,13 @@ nav {
 
 .pic {
   position: absolute;
-  left: 46%;
-  top: 50%;
   border-radius: 10em;
   z-index: 10;
+  @media screen and (min-width: 992px){
+    left: 46%;
+    top: 50%;
+  }
+
 }
 
 .black {
@@ -102,9 +105,11 @@ nav {
   align-items: center;
 
   h1 {
-    font: 900 7em 'Butterfly Kids', 'Dancing Script', cursive;
+    font: 900 6.3em 'Butterfly Kids', 'Dancing Script', cursive;
     position: relative;
-
+    @media screen and (max-width: 991px) {
+    margin: 0.5em;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -113,6 +118,11 @@ nav {
       height: 0;
       border-bottom: 2px solid #1b1b1b;
       width: 60%;
+    }
+    @media screen and (max-width: 1140px){
+      &:before{
+        display:none;
+      }
     }
   }
 }
@@ -140,6 +150,9 @@ nav {
     padding: 10px;
     background: #eec93b;
     color: #2f2f2f;
+  }
+  @media screen and (max-width: 991px){
+  padding: 5px;
   }
 }
 

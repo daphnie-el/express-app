@@ -1,0 +1,2 @@
+After cloning this project using 'git clone link' on your command https://github.com/daphnie-el/express-app, install packages and dependences using 'npm  install'.
+Then start the server using the command  'npm run watch' to watch for changes made to the server and immediate restarting. 
