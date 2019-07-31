@@ -12,7 +12,7 @@ let app = express();
 init();
 mountRouter();
 
-function init() {
+const init = () => {
   // view engine setup
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'ejs');
@@ -32,7 +32,7 @@ function init() {
   
 }
 
-function mountRouter() {
+const mountRouter = () => {
   app.use('/', indexRouter);
   app.use('/users', usersRouter);
 }
